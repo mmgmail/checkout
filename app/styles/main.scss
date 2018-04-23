@@ -53,6 +53,27 @@ a {
   font-family: $georg;
 }
 
+.main-layout-title {
+  font-family: Europa;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 90px 0 50px;
+
+  span {
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 /*** Main Layout grid ***/
 
 .main-layout {
