@@ -11,8 +11,6 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
-
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -38,15 +36,13 @@
         <div class="main-layout__content_nested">
 
           <div class="layout-greeting">
-            <div class="row">
-              <div class="col col-lg-6 col-xl-7">
-                <div class="layout-greeting__title-1">Hey Elias,</div>
-                <div class="layout-greeting__title-2">Your test results are in. You’ve got a...</div>
-                <div class="layout-greeting__title-3">Dual Efficient Body.</div>
-                <a href="#" class="custom-snow-button">Learn about my body</a>
-              </div>
-
+            <div class="layout-greeting__content">
+              <div class="layout-greeting__title-1">Hey Elias,</div>
+              <div class="layout-greeting__title-2">Your test results are in. You’ve got a</div>
+              <div class="layout-greeting__title-3">Dual Efficient Body.</div>
+              <a href="#" class="custom-snow-button">Learn about my body</a>
             </div>
+
             <div class="layout-greeting__man">
               <img src="images/layer-6.png"
                    srcset="images/layer-6@2x.png 2x,
@@ -58,7 +54,80 @@
           <div class="layout-body">
             <div class="main-layout-title"><span>your body</span></div>
           </div>
-
+          <div class="layout-body__grid">
+            <div class="layout-body__grid__item">
+              <div class="layout-body__grid__item_icon">
+                <img src="images/icons-8-fish-96.png"
+                     srcset="images/icons-8-fish-96@2x.png 2x,
+                             images/icons-8-fish-96@3x.png 3x">
+              </div>
+              <div class="layout-body__grid__item_content">
+                <div class="layout-body__grid__item_title">You told us you eat a pescatarian diet</div>
+                <div class="layout-body__grid__item_text">A family history of heart disease ups your chances of something</div>
+                <a class="layout-body__grid__item_link">Read more</a>
+              </div>
+            </div>
+            <div class="layout-body__grid__item">
+              <div class="layout-body__grid__item_icon">
+                <img src="images/icon-heart.png"
+                     srcset="images/icon-heart@2x.png 2x,
+                             images/icon-heart@3x.png 3x">
+              </div>
+              <div class="layout-body__grid__item_content">
+                <div class="layout-body__grid__item_title">Your family’s history of heart disease</div>
+                <div class="layout-body__grid__item_text">A family history of heart disease ups your chances of something</div>
+                <a class="layout-body__grid__item_link">Read more</a>
+              </div>
+            </div>
+            <div class="layout-body__grid__item">
+              <div class="layout-body__grid__item_icon">
+                <img src="images/icons-8-glucometer-96.png"
+                     srcset="images/icons-8-glucometer-96@2x.png 2x,
+                             images/icons-8-glucometer-96@3x.png 3x">
+              </div>
+              <div class="layout-body__grid__item_content">
+                <div class="layout-body__grid__item_title">You shared about your diabetes</div>
+                <div class="layout-body__grid__item_text">A family history of heart disease ups putting more words here for fun your</div>
+                <a class="layout-body__grid__item_link">Read more</a>
+              </div>
+            </div>
+            <div class="layout-body__grid__item">
+              <div class="layout-body__grid__item_icon">
+                <img src="images/icon-pizza.png"
+                     srcset="images/icon-pizza@2x.png 2x,
+                             images/icon-pizza@3x.png 3x">
+              </div>
+              <div class="layout-body__grid__item_content">
+                <div class="layout-body__grid__item_title">Struggling with uncontrollable cravings</div>
+                <div class="layout-body__grid__item_text">A family history of heart disease ups putting more words here for fun your</div>
+                <a class="layout-body__grid__item_link">Read more</a>
+              </div>
+            </div>
+            <div class="layout-body__grid__item">
+              <div class="layout-body__grid__item_icon">
+                <img src="images/icons-8-thermometer-96.png"
+                     srcset="images/icons-8-thermometer-96@2x.png 2x,
+                             images/icons-8-thermometer-96@3x.png 3x">
+              </div>
+              <div class="layout-body__grid__item_content">
+                <div class="layout-body__grid__item_title">Your caloric heat is too low</div>
+                <div class="layout-body__grid__item_text">A family history of heart disease ups putting more words here for fun your</div>
+                <a class="layout-body__grid__item_link">Read more</a>
+              </div>
+            </div>
+            <div class="layout-body__grid__item">
+              <div class="layout-body__grid__item_icon">
+                <img src="images/icon-compass.png"
+                     srcset="images/icon-compass@2x.png 2x,
+                             images/icon-compass@3x.png 3x">
+              </div>
+              <div class="layout-body__grid__item_content">
+                <div class="layout-body__grid__item_title">Struggling with uncontrollable cravings</div>
+                <div class="layout-body__grid__item_text">A family history of heart disease ups putting more words here for fun your</div>
+                <a class="layout-body__grid__item_link">Read more</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,20 +137,6 @@
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/plugins.js -->
-    <!-- <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/popover.js"></script> -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
