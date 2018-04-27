@@ -334,11 +334,11 @@ body {
   position: relative;
 
   @include retina2() {
-    background: url(../images/shape-2@2x.png) no-repeat left top / cover;
+    background: $white url(../images/shape-2@2x.png) no-repeat left top / cover;
   }
 
   @include retina3() {
-    background: url(../images/shape-2@3x.png) no-repeat left top / cover;
+    background: $white url(../images/shape-2@3x.png) no-repeat left top / cover;
   }
 
   &__content {
@@ -1626,6 +1626,31 @@ a.layout-feat__row_link:hover {
   .main-layout__sidebar {
     max-width: 200px;
   }
+
+  .layout-app__inner {
+    background: url(../images/app-mockup.png) no-repeat 70% bottom/cover;
+  }
+
+  .layout-app__inner_title-2 {
+    font-size: 40px;
+  }
+
+  .layout-app__inner_text {
+    font-size: 22px;
+  }
+
+  .custom-orange-button {
+    font-size: 18px;
+  }
+
+  .main-layout__content_nested {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .layout-greeting.main-layout__content_nested {
+    max-width: 96.5%;
+  }
 }
 
 @include media(992) {
@@ -1648,5 +1673,206 @@ a.layout-feat__row_link:hover {
   .main-layout__navigation__avatar_title,
   .main-layout__navigation__list_title {
     display: none;
+  }
+
+  .main-layout__navigation__list_link {
+    justify-content: flex-end;
+  }
+
+  .main-layout__navigation_gplans-link {
+    font: 0/0 a;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .main-layout__navigation {
+    padding-right: 8px;
+  }
+
+  .main-layout__navigation__list_link:before {
+    right: -15px;
+  }
+
+  .layout-masonry__content {
+    max-width: 205px;
+  }
+
+  .main-layout__sidebar {
+    display: none;
+  }
+}
+
+@include media(767) {
+  .layout-greeting__title-1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .layout-greeting__title-3 {
+    font-size: 20px;
+  }
+
+  .custom-snow-button {
+    font-size: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .layout-greeting__man {
+    right: 18%;
+
+    img {
+      max-width: 80%;
+    }
+  }
+
+  .layout-greeting {
+    min-height: 210px;
+  }
+
+  .layout-greeting {
+    background-size: 80%;
+    background-position: right bottom;
+  }
+
+  .layout-greeting.main-layout__content_nested {
+    margin-top: 20px;
+  }
+
+  .main-layout-title {
+    font-size: 34px;
+    margin: 40px;
+  }
+
+  .layout-body__grid__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+  .layout-body__grid__item_icon,
+  .layout-body__grid__item_content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .layout-body__grid__item_content {
+    padding: 15px;
+  }
+
+  .layout-most__triangle-top {
+    margin-top: -135px;
+  }
+
+  .layout-most__info {
+    flex-wrap: wrap;
+  }
+
+  .layout-most__info_content,
+  .layout-most__info_photo {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .layout-most__info_photo {
+    order: 0;
+    min-height: 250px;
+    background-position: left 70%;
+  }
+
+  .layout-most__info_content {
+    order: 1;
+    border-radius: 0;
+    background-position: -15px;
+    padding: 15px;
+  }
+
+  .layout-most__info_title {
+    flex-wrap: wrap;
+
+    span {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    img {
+      margin: -50px auto 15px;
+    }
+  }
+
+  .layout-diff__info {
+    background: url(../images/layer-4.png) no-repeat center top / 100% auto,
+                $white url(../images/layer-7.png) no-repeat center bottom / 100% auto;
+  }
+
+  .layout-diff__info_content {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 110px 15px;
+  }
+
+  .layout-diff__info_title {
+    font-size: 34px;
+  }
+
+  .layout-diff__googlia {
+    flex-wrap: wrap;
+  }
+
+  .layout-diff__googlia_photo {
+    display: none;
+  }
+
+  .layout-diff__googlia_content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .layout-diff__googlia_sign img {
+    display: none;
+  }
+
+  .layout-diff__googlia_sign {
+    background: url(../images/dr-philip-goglia-signature.png) no-repeat center top / 100% auto;
+    width: 100%;
+    height: 170px;
+  }
+
+  .layout-diff:after {
+    display: none;
+  }
+}
+
+@include media(350) {
+  .layout-greeting.main-layout__content_nested .custom-snow-button {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@include retina2phone() {
+  .layout-greeting {
+    background-size: 80%;
+    background-position: right bottom;
+  }
+
+  .layout-diff__info {
+    background: url(../images/layer-4@2x.png) no-repeat center top / 100% auto,
+                $white url(../images/layer-7@2x.png) no-repeat center bottom / 100% auto;
+  }
+}
+
+@include retina3phone() {
+  .layout-greeting {
+    background-size: 80%;
+    background-position: right bottom;
+  }
+
+  .layout-diff__info {
+    background: url(../images/layer-4@3x.png) no-repeat center top / 100% auto,
+                $white url(../images/layer-7@3x.png) no-repeat center bottom / 100% auto;
   }
 }
