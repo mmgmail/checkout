@@ -2183,5 +2183,53 @@ a.layout-feat__row_link:hover {
     font-size: 20px;
     margin-bottom: 10px;
   }
+}
+
+/*** Payment queries ***/
+
+@include small() {
+  .main-payment {
+    padding-top: 0;
+  }
+
+  .main-payment__footer .layout-masonry {
+    flex-flow: column;
+    padding: 20px 10px;
+  }
+
+  .main-payment__inner {
+    flex-direction: column;
+  }
+
+  .main-payment__form {
+    width: 100%;
+  }
+
+  .main-payment__sticky {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 15px;
+  }
+
+  .main-payment__footer_brands {
+    margin: 20px auto;
+  }
+
+  .main-payment__checkmark {
+
+  }
+
+  .main-payment__checkmark_thumb {
+    display: none!important;
+  }
+
+  .main-payment__form__content {
+    padding: 26px 15px 30px 15px;
+  }
+
+  .main-payment__footer {
+    padding: 0 15px;
+  }
 
 }
