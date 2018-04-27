@@ -1619,3 +1619,34 @@ a.layout-feat__row_link:hover {
 .main-layout__navigation_gplans-link:focus {
   color: #fff;
 }
+
+/*** Media quires ***/
+
+@include media(1160) {
+  .main-layout__sidebar {
+    max-width: 200px;
+  }
+}
+
+@include media(992) {
+  .main-layout__sidebar {
+    width: 70px;
+  }
+
+  .main-layout__navigation__avatar {
+    width: 50px;
+    margin-left: auto;
+  }
+
+  .main-layout__navigation__avatar_pic {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    border: none;
+  }
+
+  .main-layout__navigation__avatar_title,
+  .main-layout__navigation__list_title {
+    display: none;
+  }
+}
