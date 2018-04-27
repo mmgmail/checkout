@@ -1404,7 +1404,6 @@ $paddingMainTop: 7vh;
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
   padding-top: 7vh;
 
   &__inner {
@@ -1491,6 +1490,7 @@ $paddingMainTop: 7vh;
   &__footer {
     max-width: 1140px;
     margin: auto;
+    padding-bottom: 80px;
 
     &_brands {
       margin: 50px auto;
@@ -1586,6 +1586,50 @@ $paddingMainTop: 7vh;
         justify-content: center;
         align-items: center;
       }
+    }
+  }
+
+  &__total {
+
+    &_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgb(183, 183, 183);
+      padding: 0 20px 0 35px;
+
+      b {
+        color: black;
+      }
+
+
+      & + & {
+        margin-top: 10px;
+      }
+
+      &:last-child {
+        margin-top: 15px;
+      }
+
+      .main-checkout__total__head_right {
+        padding-right: 0;
+      }
+    }
+
+    &_left {
+
+    }
+
+    &_right {
+      font-family: $georg;
+      text-align: right;
     }
   }
 }
@@ -2230,6 +2274,14 @@ a.layout-feat__row_link:hover {
 
   .main-payment__footer {
     padding: 0 15px;
+  }
+
+  .main-payment__total_row .main-checkout__total__head_right {
+    justify-content: flex-end;
+  }
+
+  .main-payment__total_row {
+    padding: 0 10px;
   }
 
 }
