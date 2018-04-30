@@ -4,7 +4,7 @@
 @import "fonts.scss";
 
 $width-sidebar: 300px;
-$georg: Georgia, Times, "Times New Roman", serif;
+$georg: Roboto, sans-serif;
 
 p {
   margin: 0;
@@ -51,6 +51,7 @@ body {
   font-family: Europa, sans-serif;
   color: $black-three;
   background-color: #fafafa;
+  font-weight: 300;
 }
 
 .svg-triangle {
@@ -1544,6 +1545,8 @@ $paddingMainTop: 7vh;
     &_thumb {
       flex: 0 0 20%;
       max-width: 20%;
+      display: flex;
+      align-items: flex-end;
     }
 
     &_content {
@@ -1631,6 +1634,110 @@ $paddingMainTop: 7vh;
       font-family: $georg;
       text-align: right;
     }
+  }
+}
+
+.main-payment__form__tab {
+  padding: 45px;
+}
+
+.main-payment__form__tab .payment-form .input-container {
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: inset 0px 4px 4.4px 1.6px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border: none;
+}
+
+.main-payment__form__tab .payment-form .input-container input {
+  border: solid 2px #9aa8bb;
+  border-radius: 5px;
+}
+
+.main-payment__form__tab .payment-form .input-container input:not(.ng-empty).ng-valid {
+  border-color: limegreen;
+  box-shadow: none;
+}
+
+.main-payment__form__tab .payment-form .input-container input {
+  height: 50px;
+  box-shadow: none!important;
+}
+
+.main-payment__form__tab .payment-form .brand-label.pf-credit-card {
+  top: 9px;
+}
+
+.main-payment__form__tab .payment-form .focus-label {
+  top: 15px;
+}
+
+.main-payment__form__tab .payment-form__head_top .top-right img {
+  width: 45px;
+}
+
+.main-payment__form__tab .payment-form .brand-label.card-icon-visa,
+.main-payment__form__tab .payment-form .brand-label.card-icon-discover,
+.main-payment__form__tab .payment-form .brand-label.card-icon-diners,
+.main-payment__form__tab .payment-form .brand-label.card-icon-mastercard,
+.main-payment__form__tab .payment-form .brand-label.card-icon-jcb,
+.main-payment__form__tab .payment-form .brand-label.card-icon-maestro,
+.main-payment__form__tab .payment-form .brand-label.card-icon-american-express {
+  top: 9px;
+}
+
+.main-payment__form__tab .payment-form__submit {
+  width: 200px;
+  height: 45px;
+  border-radius: 23px;
+  background: linear-gradient(15deg, #ff7a09, rgb(251, 206, 89));
+  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $white;
+  text-transform: capitalize;
+  transition: transform 0.3s, box-shadow 0.3;
+}
+
+.main-payment__form__tab .payment-form__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(60deg, #fbce59, #ff7a09);
+  color: white;
+}
+
+.main-payment__form__tab .custom-pay-tab .tab-content {
+  min-height: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .payment-form .top-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .main-payment__form__tab {
+    padding: 40px 15px;
+  }
+
+  .main-payment__form__tab .payment-form__head_top .top-right img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-checkout__sticky_fixed {
+    -webkit-transform: translate3d(0, 0, 0)!important;
+    transform: translate3d(0, 0, 0)!important;
   }
 }
 
@@ -2258,10 +2365,6 @@ a.layout-feat__row_link:hover {
 
   .main-payment__footer_brands {
     margin: 20px auto;
-  }
-
-  .main-payment__checkmark {
-
   }
 
   .main-payment__checkmark_thumb {
